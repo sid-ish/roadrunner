@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #2563eb;   /* blue-600 */
+  --color-secondary: #1e40af; /* blue-800 */
+  --color-bg: #f8fafc;        /* slate-50 */
+  --color-card: #ffffff;
+  --color-text: #0f172a;      /* slate-900 */
+}
