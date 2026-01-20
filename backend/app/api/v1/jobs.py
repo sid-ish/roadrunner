@@ -6,17 +6,9 @@ router = APIRouter()
 
 @router.post("/", response_model=JobResponse)
 def create(job: JobCreate):
+    # Creates job + enqueues to Redis
     return create_job(job)
 
 @router.get("/{job_id}")
 def status(job_id: str):
     return get_job_status(job_id)
-
-@router.post("/", response_model=JobResponse)
-def create(job: JobCreate):
-    return create_job(job)
-
-@router.get("/{job_id}")
-def status(job_id: str):
-    return get_job_status(job_id)
-

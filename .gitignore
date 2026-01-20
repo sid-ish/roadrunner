@@ -68,6 +68,20 @@ instance/
 # Scrapy stuff:
 .scrapy
 
+# Data / runtime artifacts
+data/
+data/**
+*.mp4
+*.jpg
+*.png
+
+# DB (optional – keep schema, ignore runtime db)
+data/db/*.db
+
+# OS / editor
+.DS_Store
+.vscode/
+
 # Sphinx documentation
 docs/_build/
 
